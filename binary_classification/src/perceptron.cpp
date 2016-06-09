@@ -31,6 +31,10 @@ void Perceptron::setup(){
     finish_flag = false;
 }
 
+void Perceotron::update(){
+  train();
+}
+
 void Perceptron::draw(){
     for(int i = 0; i < N; i++){
         ofSetColor(249, 37, 0);

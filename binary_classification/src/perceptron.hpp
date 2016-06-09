@@ -34,6 +34,7 @@ private:
 public:
     void train(); // 学習
     void setup();
+    void update();
     void draw();
 
 };
