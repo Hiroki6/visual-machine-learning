@@ -31,8 +31,24 @@ void Perceptron::setup(){
     finish_flag = false;
 }
 
-void Perceptron::update(){
-    
+void Perceptron::draw(){
+    for(int i = 0; i < N; i++){
+        ofSetColor(249, 37, 0);
+        ofDrawCircle(data1[i].x, data1[i].y, 3);
+        ofSetColor(50, 204, 18);
+        ofDrawCircle(data2[i].x, data2[i].y, 3);
+    }
+    for(float i = -400.0; i < 400.0; i += 0.8){
+        ofSetColor(200, 200, 0);
+        float y = -W[1]/W[2] * i - W[0]/W[2];
+        ofDrawCircle(i, y, 1);
+    }
+}
+
+void Perceptron::train(){
+    /*
+       すべて正しく識別するまで学習
+       */
     int correct_num = 0;
     if(!finish_flag){
         for(int i = 0; i < N; i++){
@@ -55,22 +71,4 @@ void Perceptron::update(){
         }
         if(correct_num == N*2) finish_flag = true;
     }
-}
-
-void Perceptron::draw(){
-    for(int i = 0; i < N; i++){
-        ofSetColor(249, 37, 0);
-        ofDrawCircle(data1[i].x, data1[i].y, 3);
-        ofSetColor(50, 204, 18);
-        ofDrawCircle(data2[i].x, data2[i].y, 3);
-    }
-    for(float i = -400.0; i < 400.0; i += 0.8){
-        ofSetColor(200, 200, 0);
-        float y = -W[1]/W[2] * i - W[0]/W[2];
-        ofDrawCircle(i, y, 1);
-    }
-}
-
-void Perceptron::train(){
-
 }

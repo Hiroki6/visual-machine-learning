@@ -5,7 +5,9 @@
 //  Created by 藤野宏樹 on 2016/06/09.
 //
 //
-
+/*
+   パーセプトロンによる２値線形分類
+   */
 #ifndef perceptron_hpp
 #define perceptron_hpp
 
@@ -30,10 +32,8 @@ private:
     vec *data2;
     bool finish_flag;
 public:
-    //Perceptron(); // データ初期化
     void train(); // 学習
     void setup();
-    void update();
     void draw();
 
 };

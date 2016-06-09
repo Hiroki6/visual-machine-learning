@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/perceptron.cpp"
-            timestampString = "487184575.818058"
+            timestampString = "487187001.547792"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "Perceptron::draw()"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "Perceptron::train()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
