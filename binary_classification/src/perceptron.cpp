@@ -47,6 +47,10 @@ void Perceptron::draw(){
         float y = -W[1]/W[2] * i - W[0]/W[2];
         ofDrawCircle(i, y, 1);
     }
+    ofSetColor(9, 230, 249);
+    string weight_elements = "y=" + ofToString(-W[1]/W[2]) + "*x-" + ofToString(W[0]/W[2]);
+    ofDrawBitmapString(weight_elements, -350, 350);
+    
 }
 
 void Perceptron::train(){

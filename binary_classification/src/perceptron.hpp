@@ -18,7 +18,7 @@ const int W_DIM = 3; // 重み行列の次元
 
 class Perceptron{
 private:
-    const int N = 100; // データ数
+    const int N = 200; // データ数
     double learnrate = 0.01; // 学習率
     float *W; // 重み行列
     int mean1[2] = {-2, 2};
@@ -31,6 +31,7 @@ private:
     vec *data1;
     vec *data2;
     bool finish_flag;
+    
 public:
     void train(); // 学習
     void setup();
