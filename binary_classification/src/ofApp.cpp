@@ -18,9 +18,10 @@ void ofApp::update(){
 void ofApp::draw(){
     ofTranslate(400, 400);
     ofScale(1, -1);
-    perceptron.draw();
+    ofSetColor(9, 230, 249);
     ofDrawLine(-400, 0, 400, 0);
     ofDrawLine(0, -400, 0, 400);
+    perceptron.draw();
 }
 
 //--------------------------------------------------------------
