@@ -4,7 +4,6 @@
 void ofApp::setup(){
     ofSetWindowShape(800, 800);
     ofBackground(0, 0, 0);
-    ofSetFrameRate(0.001);
     ofSetCircleResolution(64);
     ofEnableAlphaBlending();
     perceptron.setup();

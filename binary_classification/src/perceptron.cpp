@@ -10,7 +10,7 @@
 #include <random>
 
 void Perceptron::setup(){
-    
+    ofSetFrameRate(1);
     W = new float[W_DIM];
     data1 = new vec[N];
     data2 = new vec[N];
@@ -31,8 +31,8 @@ void Perceptron::setup(){
     finish_flag = false;
 }
 
-void Perceotron::update(){
-  train();
+void Perceptron::update(){
+    train();
 }
 
 void Perceptron::draw(){
