@@ -9,6 +9,11 @@
 #include "perceptron.hpp"
 #include <random>
 
+void Perceptron::~Perceptron(){
+    delete[] W;
+    delete[] data1;
+    delete[] data2;
+}
 void Perceptron::setup(){
     ofSetFrameRate(1);
     W = new float[W_DIM];

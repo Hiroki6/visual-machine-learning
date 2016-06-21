@@ -8,9 +8,11 @@
 /*
    パーセプトロンによる２値線形分類
    */
+
 #ifndef perceptron_hpp
 #define perceptron_hpp
 
+#pragma once
 #include <stdio.h>
 #include "ofMain.h"
 
@@ -33,6 +35,7 @@ private:
     bool finish_flag;
     
 public:
+    void ~Perceptron(); // デストラクタ
     void train(); // 学習
     void setup();
     void update();
