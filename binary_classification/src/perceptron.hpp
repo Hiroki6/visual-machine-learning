@@ -35,7 +35,6 @@ private:
     bool finish_flag;
     
 public:
-    void ~Perceptron(); // デストラクタ
     void train(); // 学習
     void setup();
     void update();
